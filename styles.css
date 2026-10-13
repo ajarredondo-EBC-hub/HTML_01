@@ -1,0 +1,88 @@
+:root {
+  --mexico-green: #176b45;
+  --mexico-red: #b83232;
+  --warm-cream: #fffaf0;
+}
+
+body {
+  background-color: var(--warm-cream);
+}
+
+.restaurant-header {
+  background: linear-gradient(135deg, #176b45, #104b34);
+}
+
+.restaurant-nav {
+  background-color: #fff;
+  background-image: linear-gradient(
+    90deg,
+    var(--mexico-green) 0 33.333%,
+    #fff 33.333% 66.666%,
+    var(--mexico-red) 66.666% 100%
+  );
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 5px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+.restaurant-nav .nav-link {
+  color: var(--mexico-green);
+  font-weight: 600;
+}
+
+.restaurant-nav .nav-link:hover,
+.restaurant-nav .nav-link:focus {
+  color: var(--mexico-red);
+  background-color: var(--warm-cream);
+}
+
+.restaurant-logo {
+  width: 96px;
+  height: 92px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.restaurant-carousel {
+  background-color: #104b34;
+}
+
+.restaurant-carousel .carousel-item img {
+  height: 320px;
+  object-fit: contain;
+}
+
+.menu-section {
+  scroll-margin-top: 1rem;
+}
+
+.dish-card {
+  height: 100%;
+  border-top: 4px solid var(--mexico-green);
+}
+
+.dish-image {
+  height: 190px;
+  object-fit: cover;
+}
+
+.dish-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.dish-card .btn {
+  margin-top: auto;
+}
+
+.price {
+  color: var(--mexico-red);
+  font-weight: 700;
+}
+
+.restaurant-footer {
+  background-color: var(--mexico-green);
+}

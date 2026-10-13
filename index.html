@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explora y elige tus platillos favoritos de nuestro menú mexicano.">
+    <title>Menú | Sabores de México</title>
+    <link rel="icon" type="image/png" href="media/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="restaurant-header text-white py-4">
+      <div class="container d-flex flex-column flex-sm-row align-items-center gap-3 text-center text-sm-start">
+        <img src="media/logo.jpeg" class="restaurant-logo" alt="Logo del restaurante">
+        <div>
+          <p class="text-uppercase small fw-semibold mb-1">Cocina tradicional</p>
+          <h1 class="display-5 fw-bold mb-1">Sabores de México</h1>
+          <p class="mb-0">Un recorrido delicioso por nuestra cocina</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg restaurant-nav" aria-label="Navegación principal">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+          aria-expanded="false" aria-label="Mostrar u ocultar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">Nuestras instalaciones</a>
+            <a class="nav-link" href="#">Ubicación</a>
+            <a class="nav-link" href="#">Eventos especiales</a>
+            <a class="nav-link" href="#">Clientes</a>
+            <a class="nav-link" href="userexperience.html">Encuesta</a>
+            <a class="nav-link" href="carta.html">Carta</a>
+            <a class="nav-link" href="pedidos.html">Pedidos</a>
+            <a class="nav-link" href="info.html">Información</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="restaurantCarousel" class="carousel slide restaurant-carousel" data-bs-ride="carousel" aria-label="Galería de imágenes del restaurante">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#restaurantCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+        <button type="button" data-bs-target="#restaurantCarousel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+        <button type="button" data-bs-target="#restaurantCarousel" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+        <button type="button" data-bs-target="#restaurantCarousel" data-bs-slide-to="3" aria-label="Imagen 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="media/logo.jpeg" class="d-block w-100" alt="Logo de Sabores de México">
+        </div>
+        <div class="carousel-item">
+          <img src="media/comida1.jpeg" class="d-block w-100" alt="Enchiladas mexicanas con salsa verde y roja">
+        </div>
+        <div class="carousel-item">
+          <img src="media/comida2.jpeg" class="d-block w-100" alt="Variedad de platillos mexicanos con guacamole, tamales y salsas">
+        </div>
+        <div class="carousel-item">
+          <img src="media/comida3.jpeg" class="d-block w-100" alt="Pollo servido con arroz en un plato tradicional">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Imagen anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Imagen siguiente</span>
+      </button>
+    </div>
+
+    <main class="container py-4 py-lg-5">
+      <div class="alert alert-success" role="status">
+        <strong>¡Bienvenido!</strong> Elige una sección y selecciona los platillos que más se te antojen.
+      </div>
+
+      <nav class="d-flex flex-wrap gap-2 mb-4" aria-label="Secciones del menú">
+        <a class="btn btn-success" href="#entradas">Entradas</a>
+        <a class="btn btn-danger" href="#platos-fuertes">Platos fuertes</a>
+        <a class="btn btn-warning" href="#postres">Postres</a>
+      </nav>
+
+      <div id="selection-alert" class="alert alert-info" role="status" aria-live="polite">
+        Aún no has seleccionado ningún platillo.
+      </div>
+
+      <section id="entradas" class="menu-section mb-5">
+        <div class="alert alert-success" role="note">
+          <h2 class="h4 mb-1">Para comenzar: entradas</h2>
+          <p class="mb-0">Abre el apetito con un clásico mexicano.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="card dish-card shadow-sm">
+              <img src="media/comida2.jpeg" class="card-img-top dish-image" alt="Variedad de platillos mexicanos con guacamole, tamales y salsas">
+              <div class="card-body">
+                <h3 class="h5 card-title">Guacamole con totopos</h3>
+                <p class="card-text">Aguacate fresco, jitomate, cebolla, cilantro y totopos crujientes.</p>
+                <p class="price">$95</p>
+                <button class="btn btn-outline-success select-dish" type="button" data-dish="Guacamole con totopos" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card dish-card shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Sopes de frijol</h3>
+                <p class="card-text">Tres sopes con frijoles, lechuga, queso fresco y salsa de la casa.</p>
+                <p class="price">$110</p>
+                <button class="btn btn-outline-success select-dish" type="button" data-dish="Sopes de frijol">Seleccionar</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card dish-card shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Queso fundido</h3>
+                <p class="card-text">Queso Chihuahua fundido con champiñones, servido con tortillas de harina.</p>
+                <p class="price">$125</p>
+                <button class="btn btn-outline-success select-dish" type="button" data-dish="Queso fundido">Seleccionar</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="platos-fuertes" class="menu-section mb-5">
+        <div class="alert alert-danger" role="note">
+          <h2 class="h4 mb-1">El corazón del menú: platos fuertes</h2>
+          <p class="mb-0">Escoge tu favorito, preparado al estilo de la casa.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="card dish-card shadow-sm">
+              <img src="media/comida1.jpeg" class="card-img-top dish-image" alt="Enchiladas mexicanas con salsa verde y roja">
+              <div class="card-body">
+                <h3 class="h5 card-title">Enchiladas verdes</h3>
+                <p class="card-text">Tortillas rellenas de pollo, bañadas en salsa verde y crema.</p>
+                <p class="price">$185</p>
+                <button class="btn btn-outline-danger select-dish" type="button" data-dish="Enchiladas verdes" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card dish-card shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Tacos al pastor</h3>
+                <p class="card-text">Orden de cuatro tacos con piña, cebolla, cilantro y salsa.</p>
+                <p class="price">$175</p>
+                <button class="btn btn-outline-danger select-dish" type="button" data-dish="Tacos al pastor">Seleccionar</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card dish-card shadow-sm">
+              <img src="media/comida3.jpeg" class="card-img-top dish-image" alt="Pollo servido con arroz en un plato tradicional">
+              <div class="card-body">
+                <h3 class="h5 card-title">Mole poblano</h3>
+                <p class="card-text">Pollo en mole poblano, acompañado de arroz y ajonjolí.</p>
+                <p class="price">$210</p>
+                <button class="btn btn-outline-danger select-dish" type="button" data-dish="Mole poblano" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="postres" class="menu-section mb-5">
+        <div class="alert alert-warning" role="note">
+          <h2 class="h4 mb-1">Un final dulce: postres</h2>
+          <p class="mb-0">Deja espacio para algo rico.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="card dish-card shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Flan de la casa</h3>
+                <p class="card-text">Flan cremoso de vainilla con caramelo.</p>
+                <p class="price">$85</p>
+                <button class="btn btn-outline-warning text-dark select-dish" type="button" data-dish="Flan de la casa">Seleccionar</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card dish-card shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Churros con chocolate</h3>
+                <p class="card-text">Churros recién hechos con azúcar y salsa de chocolate.</p>
+                <p class="price">$95</p>
+                <button class="btn btn-outline-warning text-dark select-dish" type="button" data-dish="Churros con chocolate">Seleccionar</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card dish-card shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Arroz con leche</h3>
+                <p class="card-text">Postre tradicional con canela y un toque de vainilla.</p>
+                <p class="price">$75</p>
+                <button class="btn btn-outline-warning text-dark select-dish" type="button" data-dish="Arroz con leche">Seleccionar</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal fade" id="availabilityModal" tabindex="-1" aria-labelledby="availabilityModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="availabilityModalLabel">Confirma la disponibilidad</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">
+              <strong id="modal-dish-name"></strong> está sujeto a disponibilidad.
+              Comunícate con cocina para confirmar si está disponible.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-success" id="confirm-dish-selection" data-bs-dismiss="modal">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="restaurant-footer text-center text-white py-3">
+      <p class="mb-0">Gracias por visitar Sabores de México</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const selectionAlert = document.getElementById("selection-alert");
+      const modalDishName = document.getElementById("modal-dish-name");
+      const availabilityModal = document.getElementById("availabilityModal");
+      let pendingDish = "";
+
+      const showSelectionConfirmation = (dish) => {
+        selectionAlert.textContent = `¡Buena elección! Has seleccionado: ${dish}.`;
+        selectionAlert.className = "alert alert-success";
+      };
+
+      document.querySelectorAll(".select-dish").forEach((button) => {
+        button.addEventListener("click", () => {
+          const dish = button.dataset.dish;
+
+          if (button.hasAttribute("data-confirm-availability")) {
+            pendingDish = dish;
+            modalDishName.textContent = dish;
+            return;
+          }
+
+          showSelectionConfirmation(dish);
+        });
+      });
+
+      document.getElementById("confirm-dish-selection").addEventListener("click", () => {
+        if (pendingDish) {
+          showSelectionConfirmation(pendingDish);
+        }
+      });
+
+      availabilityModal.addEventListener("hidden.bs.modal", () => {
+        pendingDish = "";
+      });
+    </script>
+  </body>
+</html>

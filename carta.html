@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explora y elige tus platillos favoritos de nuestro menú mexicano.">
+    <title>Menú | Sabores de México</title>
+    <link rel="icon" type="image/png" href="media/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="restaurant-header text-white py-4">
+      <div class="container d-flex flex-column flex-sm-row align-items-center gap-3 text-center text-sm-start">
+        <img src="media/logo.jpeg" class="restaurant-logo" alt="Logo del restaurante">
+        <div>
+          <p class="text-uppercase small fw-semibold mb-1">Cocina tradicional</p>
+          <h1 class="display-5 fw-bold mb-1">Sabores de México</h1>
+          <p class="mb-0">Un recorrido delicioso por nuestra cocina</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg restaurant-nav" aria-label="Navegación principal">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+          aria-expanded="false" aria-label="Mostrar u ocultar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">Nuestras instalaciones</a>
+            <a class="nav-link" href="#">Ubicación</a>
+            <a class="nav-link" href="#">Eventos especiales</a>
+            <a class="nav-link" href="#">Clientes</a>
+            <a class="nav-link" href="userexperience.html">Encuesta</a>
+            <a class="nav-link" href="carta.html">Carta</a>
+            <a class="nav-link" href="pedidos.html">Pedidos</a>
+            <a class="nav-link" href="info.html">Información</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4 py-lg-5">
+      <div class="accordion mb-4" id="menuAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEntradas">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEntradas" aria-expanded="true" aria-controls="collapseEntradas">
+              Entradas
+            </button>
+          </h2>
+          <div id="collapseEntradas" class="accordion-collapse collapse show" aria-labelledby="headingEntradas" data-bs-parent="#menuAccordion">
+            <div class="accordion-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionSopaAzteca" aria-expanded="false" aria-controls="descriptionSopaAzteca">Sopa azteca</button>
+                    <div class="collapse mt-2" id="descriptionSopaAzteca">
+                      <div class="card card-body">Caldo tradicional de jitomate con tiras de tortilla crujiente, aguacate, queso y crema.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-success select-dish" type="button" data-dish="Sopa azteca" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionQuesoFundido" aria-expanded="false" aria-controls="descriptionQuesoFundido">Queso fundido</button>
+                    <div class="collapse mt-2" id="descriptionQuesoFundido">
+                      <div class="card card-body">Queso derretido, servido caliente con tortillas para compartir.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-success select-dish" type="button" data-dish="Queso fundido" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingComidaFuerte">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComidaFuerte" aria-expanded="false" aria-controls="collapseComidaFuerte">
+              Comida fuerte
+            </button>
+          </h2>
+          <div id="collapseComidaFuerte" class="accordion-collapse collapse" aria-labelledby="headingComidaFuerte" data-bs-parent="#menuAccordion">
+            <div class="accordion-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionPozole" aria-expanded="false" aria-controls="descriptionPozole">Pozole</button>
+                    <div class="collapse mt-2" id="descriptionPozole">
+                      <div class="card card-body">Caldo mexicano de maíz cacahuazintle, acompañado de lechuga, rábano, cebolla, limón y tostadas.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-danger select-dish" type="button" data-dish="Pozole" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionEnchiladas" aria-expanded="false" aria-controls="descriptionEnchiladas">Enchiladas</button>
+                    <div class="collapse mt-2" id="descriptionEnchiladas">
+                      <div class="card card-body">Tortillas rellenas, bañadas en salsa y servidas con crema y queso.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-danger select-dish" type="button" data-dish="Enchiladas" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingBebidasSinAlcohol">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBebidasSinAlcohol" aria-expanded="false" aria-controls="collapseBebidasSinAlcohol">
+              Bebidas sin alcohol
+            </button>
+          </h2>
+          <div id="collapseBebidasSinAlcohol" class="accordion-collapse collapse" aria-labelledby="headingBebidasSinAlcohol" data-bs-parent="#menuAccordion">
+            <div class="accordion-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionCocaCola" aria-expanded="false" aria-controls="descriptionCocaCola">Coca-Cola de vidrio</button>
+                    <div class="collapse mt-2" id="descriptionCocaCola">
+                      <div class="card card-body">Refresco Coca-Cola servido en su botella de vidrio, bien frío.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-primary select-dish" type="button" data-dish="Coca-Cola de vidrio" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionAguasDeSabor" aria-expanded="false" aria-controls="descriptionAguasDeSabor">Aguas de sabor</button>
+                    <div class="collapse mt-2" id="descriptionAguasDeSabor">
+                      <div class="card card-body">Bebidas refrescantes preparadas con fruta de temporada y agua fresca.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-primary select-dish" type="button" data-dish="Aguas de sabor" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionPozol" aria-expanded="false" aria-controls="descriptionPozol">Pozol</button>
+                    <div class="collapse mt-2" id="descriptionPozol">
+                      <div class="card card-body">Bebida tradicional de maíz y cacao, refrescante y de sabor característico.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-primary select-dish" type="button" data-dish="Pozol" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingBebidasConAlcohol">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBebidasConAlcohol" aria-expanded="false" aria-controls="collapseBebidasConAlcohol">
+              Bebidas con alcohol
+            </button>
+          </h2>
+          <div id="collapseBebidasConAlcohol" class="accordion-collapse collapse" aria-labelledby="headingBebidasConAlcohol" data-bs-parent="#menuAccordion">
+            <div class="accordion-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionTequila" aria-expanded="false" aria-controls="descriptionTequila">Tequila</button>
+                    <div class="collapse mt-2" id="descriptionTequila">
+                      <div class="card card-body">Destilado mexicano de agave azul, disponible para disfrutar solo o en coctel.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-secondary select-dish" type="button" data-dish="Tequila" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionCerveza" aria-expanded="false" aria-controls="descriptionCerveza">Cerveza</button>
+                    <div class="collapse mt-2" id="descriptionCerveza">
+                      <div class="card card-body">Cerveza fría, ideal para acompañar tus platillos.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-secondary select-dish" type="button" data-dish="Cerveza" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingPostres">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePostres" aria-expanded="false" aria-controls="collapsePostres">
+              Postres
+            </button>
+          </h2>
+          <div id="collapsePostres" class="accordion-collapse collapse" aria-labelledby="headingPostres" data-bs-parent="#menuAccordion">
+            <div class="accordion-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionCarlotta" aria-expanded="false" aria-controls="descriptionCarlotta">Carlotta</button>
+                    <div class="collapse mt-2" id="descriptionCarlotta">
+                      <div class="card card-body">Postre frío y cremoso de capas de galleta con una suave mezcla cítrica.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-warning text-dark select-dish" type="button" data-dish="Carlotta" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                  <div class="flex-grow-1">
+                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionJericaya" aria-expanded="false" aria-controls="descriptionJericaya">Jericaya</button>
+                    <div class="collapse mt-2" id="descriptionJericaya">
+                      <div class="card card-body">Postre tradicional horneado, de textura suave, preparado con leche, huevo, azúcar y canela.</div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-warning text-dark select-dish" type="button" data-dish="Jericaya" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="selection-alert" class="alert alert-info" role="status" aria-live="polite">
+        Aún no has seleccionado ningún platillo.
+      </div>
+    </main>
+
+    <div class="modal fade" id="availabilityModal" tabindex="-1" aria-labelledby="availabilityModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="availabilityModalLabel">Confirma la disponibilidad</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">
+              <strong id="modal-dish-name"></strong> está sujeto a disponibilidad.
+              Comunícate con cocina para confirmar si está disponible.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-success" id="confirm-dish-selection" data-bs-dismiss="modal">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="restaurant-footer text-center text-white py-3">
+      <p class="mb-0">Gracias por visitar Sabores de México</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const selectionAlert = document.getElementById("selection-alert");
+      const modalDishName = document.getElementById("modal-dish-name");
+      const availabilityModal = document.getElementById("availabilityModal");
+      let pendingDish = "";
+
+      const showSelectionConfirmation = (dish) => {
+        selectionAlert.textContent = `¡Buena elección! Has seleccionado: ${dish}.`;
+        selectionAlert.className = "alert alert-success";
+      };
+
+      document.querySelectorAll(".select-dish").forEach((button) => {
+        button.addEventListener("click", () => {
+          const dish = button.dataset.dish;
+
+          if (button.hasAttribute("data-confirm-availability")) {
+            pendingDish = dish;
+            modalDishName.textContent = dish;
+            return;
+          }
+
+          showSelectionConfirmation(dish);
+        });
+      });
+
+      document.getElementById("confirm-dish-selection").addEventListener("click", () => {
+        if (pendingDish) {
+          showSelectionConfirmation(pendingDish);
+        }
+      });
+
+      availabilityModal.addEventListener("hidden.bs.modal", () => {
+        pendingDish = "";
+      });
+    </script>
+  </body>
+</html>

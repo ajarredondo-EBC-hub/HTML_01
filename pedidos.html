@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Prepara tu pedido en Sabores de México.">
+    <title>Pedidos | Sabores de México</title>
+    <link rel="icon" type="image/png" href="media/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="restaurant-header text-white py-4">
+      <div class="container d-flex flex-column flex-sm-row align-items-center gap-3 text-center text-sm-start">
+        <img src="media/logo.jpeg" class="restaurant-logo" alt="Logo del restaurante">
+        <div>
+          <p class="text-uppercase small fw-semibold mb-1">Cocina tradicional</p>
+          <h1 class="display-5 fw-bold mb-1">Sabores de México</h1>
+          <p class="mb-0">Un recorrido delicioso por nuestra cocina</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg restaurant-nav" aria-label="Navegación principal">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+          aria-expanded="false" aria-label="Mostrar u ocultar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Nuestras instalaciones</a>
+            <a class="nav-link" href="index.html">Ubicación</a>
+            <a class="nav-link" href="index.html">Eventos especiales</a>
+            <a class="nav-link" href="index.html">Clientes</a>
+            <a class="nav-link" href="userexperience.html">Encuesta</a>
+            <a class="nav-link" href="carta.html">Carta</a>
+            <a class="nav-link active" href="pedidos.html" aria-current="page">Pedidos</a>
+            <a class="nav-link" href="info.html">Información</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4 py-lg-5">
+      <section aria-labelledby="pedido-title">
+        <div class="mb-4">
+          <h2 id="pedido-title">Realiza tu pedido</h2>
+          <p class="mb-0">Completa tus datos y cuéntanos qué te gustaría ordenar.</p>
+        </div>
+
+        <form class="card shadow-sm" method="post">
+          <div class="card-body p-3 p-md-4">
+            <div class="mb-3">
+              <label class="form-label" for="nombre">Nombre</label>
+              <input class="form-control" type="text" id="nombre" name="nombre"
+                placeholder="Escribe tu nombre" autocomplete="name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="telefono">Teléfono de contacto</label>
+              <input class="form-control" type="tel" id="telefono" name="telefono"
+                placeholder="Escribe tu teléfono" autocomplete="tel" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="tipoPedido">Tipo de pedido</label>
+              <select class="form-select" id="tipoPedido" name="tipoPedido" required>
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="recoger">Para recoger</option>
+                <option value="entrega">A domicilio</option>
+              </select>
+            </div>
+
+            <fieldset class="mb-3">
+              <legend class="form-label">¿Qué tipo de platillo deseas pedir?</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoPlatillo" id="entrada" value="entrada" required>
+                <label class="form-check-label" for="entrada">Entrada</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoPlatillo" id="comidaPrincipal" value="comida-principal">
+                <label class="form-check-label" for="comidaPrincipal">Comida principal</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoPlatillo" id="postre" value="postre">
+                <label class="form-check-label" for="postre">Postre</label>
+              </div>
+            </fieldset>
+
+            <div class="mb-3">
+              <label class="form-label" for="complementos">Complementos</label>
+              <select class="form-select" id="complementos" name="complementos" required>
+                <option value="" selected disabled>Selecciona un complemento</option>
+                <option value="arroz">Arroz</option>
+                <option value="frijoles">Frijoles</option>
+                <option value="tortillas">Tortillas</option>
+                <option value="guacamole">Guacamole</option>
+                <option value="sin-complemento">Sin complemento</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label" for="instruccionesEntrega">Instrucciones de entrega</label>
+              <textarea class="form-control" id="instruccionesEntrega" name="instruccionesEntrega" rows="5"
+                placeholder="Escribe aquí las indicaciones para la entrega" required></textarea>
+            </div>
+
+            <button class="btn btn-success" type="submit">Enviar pedido</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="restaurant-footer text-center text-white py-3">
+      <p class="mb-0">Gracias por visitar Sabores de México</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

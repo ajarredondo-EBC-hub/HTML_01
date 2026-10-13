@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Información sobre Sabores de México.">
+    <title>Información | Sabores de México</title>
+    <link rel="icon" type="image/png" href="media/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="restaurant-header text-white py-4">
+      <div class="container d-flex flex-column flex-sm-row align-items-center gap-3 text-center text-sm-start">
+        <img src="media/logo.jpeg" class="restaurant-logo" alt="Logo del restaurante">
+        <div>
+          <p class="text-uppercase small fw-semibold mb-1">Cocina tradicional</p>
+          <h1 class="display-5 fw-bold mb-1">Sabores de México</h1>
+          <p class="mb-0">Un recorrido delicioso por nuestra cocina</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg restaurant-nav" aria-label="Navegación principal">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+          aria-expanded="false" aria-label="Mostrar u ocultar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Nuestras instalaciones</a>
+            <a class="nav-link" href="index.html">Ubicación</a>
+            <a class="nav-link" href="index.html">Eventos especiales</a>
+            <a class="nav-link" href="index.html">Clientes</a>
+            <a class="nav-link" href="userexperience.html">Encuesta</a>
+            <a class="nav-link" href="carta.html">Carta</a>
+            <a class="nav-link" href="pedidos.html">Pedidos</a>
+            <a class="nav-link active" href="info.html" aria-current="page">Información</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4 py-lg-5">
+      <section class="mb-5" aria-labelledby="contacto-title">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+          <h2 id="contacto-title" class="mb-0">Información</h2>
+          <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#contactoRapido" aria-controls="contactoRapido">
+            Contacto rápido
+          </button>
+        </div>
+
+        <ul class="nav nav-tabs" id="informacionTabs" role="tablist" aria-label="Información del restaurante">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="contacto-tab" data-bs-toggle="tab"
+              data-bs-target="#contacto-panel" type="button" role="tab"
+              aria-controls="contacto-panel" aria-selected="true">Contacto</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="franquicias-tab" data-bs-toggle="tab"
+              data-bs-target="#franquicias-panel" type="button" role="tab"
+              aria-controls="franquicias-panel" aria-selected="false">Franquicias y ubicaciones</button>
+          </li>
+        </ul>
+        <div class="tab-content border border-top-0 rounded-bottom p-3 p-md-4" id="informacionTabContent">
+          <div class="tab-pane fade show active" id="contacto-panel" role="tabpanel"
+            aria-labelledby="contacto-tab" tabindex="0">
+            <h3 class="h5">Contáctanos</h3>
+            <p>Correo electrónico: <a href="mailto:aj.arredondo@ebc.edu.mx">aj.arredondo@ebc.edu.mx</a></p>
+            <p class="mb-0">WhatsApp: <a href="https://wa.me/524492226786">449 222 6786</a></p>
+          </div>
+          <div class="tab-pane fade" id="franquicias-panel" role="tabpanel"
+            aria-labelledby="franquicias-tab" tabindex="0">
+            <h3 class="h5">Nuestras franquicias</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Aguascalientes:</strong> Plaza Universidad</li>
+              <li class="list-group-item"><strong>Guadalajara:</strong> Plaza México</li>
+              <li class="list-group-item"><strong>León:</strong> Plaza del Zapato</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="menu-title">
+        <h2 id="menu-title" class="mb-4">Nuestro menú</h2>
+        <ul class="nav nav-pills flex-wrap gap-2 mb-3" id="menuTabs" role="tablist" aria-label="Categorías del menú">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="desayunos-tab" data-bs-toggle="tab"
+              data-bs-target="#desayunos-panel" type="button" role="tab"
+              aria-controls="desayunos-panel" aria-selected="true">Desayunos</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="comida-tab" data-bs-toggle="tab"
+              data-bs-target="#comida-panel" type="button" role="tab"
+              aria-controls="comida-panel" aria-selected="false">Comida</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="postres-tab" data-bs-toggle="tab"
+              data-bs-target="#postres-panel" type="button" role="tab"
+              aria-controls="postres-panel" aria-selected="false">Postres</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="bebidas-tab" data-bs-toggle="tab"
+              data-bs-target="#bebidas-panel" type="button" role="tab"
+              aria-controls="bebidas-panel" aria-selected="false">Bebidas</button>
+          </li>
+        </ul>
+        <div class="tab-content border rounded p-3 p-md-4" id="menuTabContent">
+          <div class="tab-pane fade show active" id="desayunos-panel" role="tabpanel"
+            aria-labelledby="desayunos-tab" tabindex="0">
+            <h3 class="h5">Desayunos</h3>
+            <ul class="mb-0"><li>Chilaquiles</li><li>Tamales</li></ul>
+          </div>
+          <div class="tab-pane fade" id="comida-panel" role="tabpanel"
+            aria-labelledby="comida-tab" tabindex="0">
+            <h3 class="h5">Comida</h3>
+            <ul class="mb-0"><li>Birria</li><li>Albóndigas</li></ul>
+          </div>
+          <div class="tab-pane fade" id="postres-panel" role="tabpanel"
+            aria-labelledby="postres-tab" tabindex="0">
+            <h3 class="h5">Postres</h3>
+            <ul class="mb-0"><li>Flan</li><li>Jericaya</li></ul>
+          </div>
+          <div class="tab-pane fade" id="bebidas-panel" role="tabpanel"
+            aria-labelledby="bebidas-tab" tabindex="0">
+            <h3 class="h5">Bebidas</h3>
+            <ul class="mb-0">
+              <li>Jugos</li>
+              <li>Café</li>
+              <li>Refrescos</li>
+              <li>Atole</li>
+              <li>Cervezas</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="contactoRapido"
+      aria-labelledby="contactoRapidoLabel">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title h5" id="contactoRapidoLabel">Contacto rápido</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+          aria-label="Cerrar"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Comunícate con Sabores de México:</p>
+        <p><a href="mailto:aj.arredondo@ebc.edu.mx">aj.arredondo@ebc.edu.mx</a></p>
+        <a class="btn btn-success" href="https://wa.me/524492226786">WhatsApp: 449 222 6786</a>
+      </div>
+    </div>
+
+    <footer class="restaurant-footer text-center text-white py-3">
+      <p class="mb-0">Gracias por visitar Sabores de México</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
