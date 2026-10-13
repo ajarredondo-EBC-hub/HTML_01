@@ -1,42 +1,69 @@
-# Restaurante - Proyecto HTML
+# 🍽️ Restaurante HTML
 
-Este repositorio contiene la página web de un restaurante creada como ejercicio de HTML/CSS. Incluye la página principal, la carta (menú), información del restaurante, un formulario de pedidos y estilos básicos.
+Bienvenido a este proyecto de sitio web para un restaurante, desarrollado con HTML y CSS. La página está diseñada para mostrar la identidad del negocio, la carta, la información general y una experiencia de compra/consulta agradable para el cliente.
 
-## Vista rápida
-- Abre `index.html` en un navegador para ver la página principal.
-- `carta.html` contiene el menú del restaurante.
-- `pedidos.html` contiene un formulario de pedidos (simulado).
-- `info.html` tiene información del restaurante y contacto.
+## 🌟 Descripción
 
-## Estructura de archivos
-- index.html — Página principal
-- carta.html — Menú / Carta
-- pedidos.html — Formulario de pedidos
-- info.html — Información y contacto
-- userexperience.html — Notas o prototipo de experiencia de usuario
-- styles.css — Estilos globales
-- media/ — Imágenes y recursos usados en la web
+Este repositorio contiene una estructura web con varias secciones:
 
-## Cómo usar localmente
+- Página principal con presentación del restaurante
+- Carta o menú de platos
+- Información del negocio
+- Pedido o formulario de contacto
+- Estilos visuales personalizados
+
+## 📁 Archivos principales
+
+- `index.html` — Página principal del restaurante
+- `carta.html` — Menú o carta del restaurante
+- `pedidos.html` — Sección para realizar pedidos o consultas
+- `info.html` — Información, ubicación y contacto
+- `userexperience.html` — Propuesta o vista de experiencia del usuario
+- `styles.css` — Estilos generales del sitio
+- `media/` — Archivos multimedia e imágenes del proyecto
+
+## ▶️ Cómo abrir el proyecto
+
 1. Clona el repositorio:
 
+   ```bash
    git clone https://github.com/ajarredondo-EBC-hub/HTML_01.git
+   ```
 
-2. Abre `index.html` en tu navegador (doble clic o desde el menú "Abrir archivo").
-3. Si usas VS Code, instala la extensión "Live Server" y pulsa "Go Live" para ver cambios en tiempo real.
+2. Abre la carpeta descargada.
+3. Ejecuta `index.html` en tu navegador.
 
-## Qué mejorar (sugerencias)
-- Añadir validación y manejo real de formularios (backend) para `pedidos.html`.
-- Hacer la web responsiva y probar en móviles.
-- Optimizar imágenes en `media/` para mejorar tiempos de carga.
+También puedes usar Live Server en VS Code para visualizar el sitio en tiempo real.
 
-## Cómo contribuir
-- Haz fork del repositorio, crea una rama con tu cambio (por ejemplo `feature/mejoras-css`) y envía un pull request.
-- Describe en el PR qué cambias y por qué.
+## 🍴 Funcionalidades
 
-## Autor
-- ajarredondo-EBC-hub
+- Diseño atractivo para un restaurante
+- Secciones informativas y de navegación
+- Presentación de la carta
+- Formulario de pedidos o contacto
+- Estilo visual adaptable para una primera versión del proyecto
+
+## 🛠️ Mejoras sugeridas
+
+- Añadir validaciones reales al formulario de pedidos
+- Mejorar la versión móvil y la responsividad
+- Optimizar imágenes para una carga más rápida
+- Incorporar animaciones y transiciones visuales
+- Conectar con un backend para guardar pedidos
+
+## 🤝 Contribuciones
+
+Si deseas colaborar:
+
+1. Haz un fork del proyecto
+2. Crea una rama con tu cambio
+3. Realiza tu edición
+4. Envía un pull request con una descripción clara
+
+## 👨‍💻 Autor
+
+- `ajarredondo-EBC-hub`
 
 ---
 
-Si quieres, puedo adaptar el README (más branding, secciones como horario, ubicación, redes sociales, o traducciones). Dime qué información adicional quieres incluir (dirección, teléfono, tipos de cocina, horario, logo, etc.) y lo ajusto.
+Si quieres, puedo hacer una segunda versión todavía más bonita con el nombre real del restaurante, colores elegantes, horario, dirección y redes sociales. 🌮✨
