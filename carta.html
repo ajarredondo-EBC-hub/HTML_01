@@ -38,36 +38,37 @@
             <a class="nav-link" href="carta.html">Carta</a>
             <a class="nav-link" href="pedidos.html">Pedidos</a>
             <a class="nav-link" href="info.html">Información</a>
+            <a class="nav-link" href="prueba.html">Prueba</a>
           </div>
         </div>
       </div>
     </nav>
 
     <main class="container py-4 py-lg-5">
-      <div class="accordion mb-4" id="menuAccordion">
-        <div class="accordion-item">
+      <div class="accordion mb-4 shadow-sm border border-success rounded-3 overflow-hidden" id="menuAccordion">
+        <div class="accordion-item border-0 border-bottom border-success">
           <h2 class="accordion-header" id="headingEntradas">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEntradas" aria-expanded="true" aria-controls="collapseEntradas">
+            <button class="accordion-button bg-light text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEntradas" aria-expanded="true" aria-controls="collapseEntradas">
               Entradas
             </button>
           </h2>
           <div id="collapseEntradas" class="accordion-collapse collapse show" aria-labelledby="headingEntradas" data-bs-parent="#menuAccordion">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light">
               <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionSopaAzteca" aria-expanded="false" aria-controls="descriptionSopaAzteca">Sopa azteca</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionSopaAzteca" aria-expanded="false" aria-controls="descriptionSopaAzteca">Sopa azteca</button>
                     <div class="collapse mt-2" id="descriptionSopaAzteca">
-                      <div class="card card-body">Caldo tradicional de jitomate con tiras de tortilla crujiente, aguacate, queso y crema.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Caldo tradicional de jitomate con tiras de tortilla crujiente, aguacate, queso y crema.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-success select-dish" type="button" data-dish="Sopa azteca" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionQuesoFundido" aria-expanded="false" aria-controls="descriptionQuesoFundido">Queso fundido</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionQuesoFundido" aria-expanded="false" aria-controls="descriptionQuesoFundido">Queso fundido</button>
                     <div class="collapse mt-2" id="descriptionQuesoFundido">
-                      <div class="card card-body">Queso derretido, servido caliente con tortillas para compartir.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Queso derretido, servido caliente con tortillas para compartir.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-success select-dish" type="button" data-dish="Queso fundido" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
@@ -76,29 +77,29 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item border-0 border-bottom border-success">
           <h2 class="accordion-header" id="headingComidaFuerte">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComidaFuerte" aria-expanded="false" aria-controls="collapseComidaFuerte">
+            <button class="accordion-button collapsed bg-light text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComidaFuerte" aria-expanded="false" aria-controls="collapseComidaFuerte">
               Comida fuerte
             </button>
           </h2>
           <div id="collapseComidaFuerte" class="accordion-collapse collapse" aria-labelledby="headingComidaFuerte" data-bs-parent="#menuAccordion">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light">
               <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionPozole" aria-expanded="false" aria-controls="descriptionPozole">Pozole</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionPozole" aria-expanded="false" aria-controls="descriptionPozole">Pozole</button>
                     <div class="collapse mt-2" id="descriptionPozole">
-                      <div class="card card-body">Caldo mexicano de maíz cacahuazintle, acompañado de lechuga, rábano, cebolla, limón y tostadas.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Caldo mexicano de maíz cacahuazintle, acompañado de lechuga, rábano, cebolla, limón y tostadas.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-danger select-dish" type="button" data-dish="Pozole" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionEnchiladas" aria-expanded="false" aria-controls="descriptionEnchiladas">Enchiladas</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionEnchiladas" aria-expanded="false" aria-controls="descriptionEnchiladas">Enchiladas</button>
                     <div class="collapse mt-2" id="descriptionEnchiladas">
-                      <div class="card card-body">Tortillas rellenas, bañadas en salsa y servidas con crema y queso.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Tortillas rellenas, bañadas en salsa y servidas con crema y queso.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-danger select-dish" type="button" data-dish="Enchiladas" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
@@ -107,38 +108,38 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item border-0 border-bottom border-success">
           <h2 class="accordion-header" id="headingBebidasSinAlcohol">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBebidasSinAlcohol" aria-expanded="false" aria-controls="collapseBebidasSinAlcohol">
+            <button class="accordion-button collapsed bg-light text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBebidasSinAlcohol" aria-expanded="false" aria-controls="collapseBebidasSinAlcohol">
               Bebidas sin alcohol
             </button>
           </h2>
           <div id="collapseBebidasSinAlcohol" class="accordion-collapse collapse" aria-labelledby="headingBebidasSinAlcohol" data-bs-parent="#menuAccordion">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light">
               <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionCocaCola" aria-expanded="false" aria-controls="descriptionCocaCola">Coca-Cola de vidrio</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionCocaCola" aria-expanded="false" aria-controls="descriptionCocaCola">Coca-Cola de vidrio</button>
                     <div class="collapse mt-2" id="descriptionCocaCola">
-                      <div class="card card-body">Refresco Coca-Cola servido en su botella de vidrio, bien frío.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Refresco Coca-Cola servido en su botella de vidrio, bien frío.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-primary select-dish" type="button" data-dish="Coca-Cola de vidrio" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionAguasDeSabor" aria-expanded="false" aria-controls="descriptionAguasDeSabor">Aguas de sabor</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionAguasDeSabor" aria-expanded="false" aria-controls="descriptionAguasDeSabor">Aguas de sabor</button>
                     <div class="collapse mt-2" id="descriptionAguasDeSabor">
-                      <div class="card card-body">Bebidas refrescantes preparadas con fruta de temporada y agua fresca.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Bebidas refrescantes preparadas con fruta de temporada y agua fresca.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-primary select-dish" type="button" data-dish="Aguas de sabor" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionPozol" aria-expanded="false" aria-controls="descriptionPozol">Pozol</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionPozol" aria-expanded="false" aria-controls="descriptionPozol">Pozol</button>
                     <div class="collapse mt-2" id="descriptionPozol">
-                      <div class="card card-body">Bebida tradicional de maíz y cacao, refrescante y de sabor característico.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Bebida tradicional de maíz y cacao, refrescante y de sabor característico.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-primary select-dish" type="button" data-dish="Pozol" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
@@ -147,29 +148,29 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item border-0 border-bottom border-success">
           <h2 class="accordion-header" id="headingBebidasConAlcohol">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBebidasConAlcohol" aria-expanded="false" aria-controls="collapseBebidasConAlcohol">
+            <button class="accordion-button collapsed bg-light text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBebidasConAlcohol" aria-expanded="false" aria-controls="collapseBebidasConAlcohol">
               Bebidas con alcohol
             </button>
           </h2>
           <div id="collapseBebidasConAlcohol" class="accordion-collapse collapse" aria-labelledby="headingBebidasConAlcohol" data-bs-parent="#menuAccordion">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light">
               <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionTequila" aria-expanded="false" aria-controls="descriptionTequila">Tequila</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionTequila" aria-expanded="false" aria-controls="descriptionTequila">Tequila</button>
                     <div class="collapse mt-2" id="descriptionTequila">
-                      <div class="card card-body">Destilado mexicano de agave azul, disponible para disfrutar solo o en coctel.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Destilado mexicano de agave azul, disponible para disfrutar solo o en coctel.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-secondary select-dish" type="button" data-dish="Tequila" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionCerveza" aria-expanded="false" aria-controls="descriptionCerveza">Cerveza</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionCerveza" aria-expanded="false" aria-controls="descriptionCerveza">Cerveza</button>
                     <div class="collapse mt-2" id="descriptionCerveza">
-                      <div class="card card-body">Cerveza fría, ideal para acompañar tus platillos.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Cerveza fría, ideal para acompañar tus platillos.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-secondary select-dish" type="button" data-dish="Cerveza" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
@@ -178,29 +179,29 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item border-0 border-bottom border-success">
           <h2 class="accordion-header" id="headingPostres">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePostres" aria-expanded="false" aria-controls="collapsePostres">
+            <button class="accordion-button collapsed bg-light text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePostres" aria-expanded="false" aria-controls="collapsePostres">
               Postres
             </button>
           </h2>
           <div id="collapsePostres" class="accordion-collapse collapse" aria-labelledby="headingPostres" data-bs-parent="#menuAccordion">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light">
               <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionCarlotta" aria-expanded="false" aria-controls="descriptionCarlotta">Carlotta</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionCarlotta" aria-expanded="false" aria-controls="descriptionCarlotta">Carlotta</button>
                     <div class="collapse mt-2" id="descriptionCarlotta">
-                      <div class="card card-body">Postre frío y cremoso de capas de galleta con una suave mezcla cítrica.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Postre frío y cremoso de capas de galleta con una suave mezcla cítrica.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-warning text-dark select-dish" type="button" data-dish="Carlotta" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center gap-3">
                   <div class="flex-grow-1">
-                    <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionJericaya" aria-expanded="false" aria-controls="descriptionJericaya">Jericaya</button>
+                    <button class="btn btn-link p-0 text-decoration-none text-success fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#descriptionJericaya" aria-expanded="false" aria-controls="descriptionJericaya">Jericaya</button>
                     <div class="collapse mt-2" id="descriptionJericaya">
-                      <div class="card card-body">Postre tradicional horneado, de textura suave, preparado con leche, huevo, azúcar y canela.</div>
+                      <div class="card card-body bg-white border-start border-danger border-3">Postre tradicional horneado, de textura suave, preparado con leche, huevo, azúcar y canela.</div>
                     </div>
                   </div>
                   <button class="btn btn-outline-warning text-dark select-dish" type="button" data-dish="Jericaya" data-bs-toggle="modal" data-bs-target="#availabilityModal" data-confirm-availability>Seleccionar</button>
@@ -210,17 +211,17 @@
           </div>
         </div>
       </div>
-      <div id="selection-alert" class="alert alert-info" role="status" aria-live="polite">
+      <div id="selection-alert" class="alert alert-info border-start border-primary border-3 shadow-sm" role="status" aria-live="polite">
         Aún no has seleccionado ningún platillo.
       </div>
     </main>
 
     <div class="modal fade" id="availabilityModal" tabindex="-1" aria-labelledby="availabilityModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
+        <div class="modal-content border-0 shadow">
+          <div class="modal-header bg-success text-white">
             <h2 class="modal-title fs-5" id="availabilityModalLabel">Confirma la disponibilidad</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
           <div class="modal-body">
             <p class="mb-0">
@@ -228,7 +229,7 @@
               Comunícate con cocina para confirmar si está disponible.
             </p>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer bg-light">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
             <button type="button" class="btn btn-success" id="confirm-dish-selection" data-bs-dismiss="modal">Seleccionar</button>
           </div>
